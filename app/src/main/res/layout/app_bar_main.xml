@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="muserapp.muserapp.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:foregroundGravity="center_vertical"
+        android:layout_gravity="bottom|end"
+        >
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_horizontal"
+            android:foregroundGravity="center_vertical"
+            android:layout_gravity="bottom|end"
+            >
+
+            <ImageButton
+                android:id="@+id/portada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:textSize="17dp"
+                    android:layout_width="175dp"
+                    android:layout_height="20dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_marginEnd="10dp"
+                    android:text="--" />
+
+                <TextView
+                    android:id="@+id/textBand"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_width="175dp"
+                    android:layout_height="20dp"
+                    android:text="--" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ant"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/ant_ab" />
+
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                app:srcCompat="@drawable/play_ab" />
+
+            <ImageButton
+                android:id="@+id/sig"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/sig_ab" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/content_main"
+        android:id="@+id/include" />
+
+</android.support.design.widget.CoordinatorLayout>

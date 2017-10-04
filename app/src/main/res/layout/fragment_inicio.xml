@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="muserapp.muserapp.Fragments.InicioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/portada" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginTop="-30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25dp"
+            android:text="¡Bienvenido!" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center|top"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20dp"
+            android:text="MUSER es una app que busca promocionar bandas locales. Si tu quieres promocionar tus temas, publicitar tu negocio, evento o solo comentar sobre la app, contactanos a muservapp@gmail.com" />
+    </LinearLayout>
+
+</RelativeLayout>
